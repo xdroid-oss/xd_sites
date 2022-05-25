@@ -3,7 +3,7 @@ const toggle = document.getElementById("nav-toggle");
 const main = document.querySelector("main");
 const header = document.querySelector("header");
 
-$(document).ready(function(){
+jQuery(document).ready(function(){
    $(".preloader").fadeOut();
 })
 
