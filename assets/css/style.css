@@ -25,6 +25,7 @@
    --team-color: #f5e6ce;
    --white-text-color: #ffffff;
    --about-text-color: #644747;
+   --team-text-color: #644747;
 }
 
 :root {
@@ -234,8 +235,13 @@ header {
    z-index: var(--z-back);
 }
 
+/* =============== Team =============== */
 .team {
    background-color: var(--team-color);
+}
+
+.team-title {
+   color: var(--team-text-color);
 }
 
 .team-1 {
@@ -243,10 +249,10 @@ header {
 }
 
 .team-card {
+   background-color: #FBF6F0;
    display: flex;
    padding: 2rem;
    gap: 1rem;
-   box-shadow: 0 0 5px 3px rgb(0, 0, 0, 0.15);
    border-radius: 3rem;
 }
 
@@ -273,12 +279,13 @@ header {
 }
 
 .team-card-info {
+   color: var(--team-text-color);
    padding-top: 4.5rem;
    text-align: center;
 }
 
 .team-card-name {
-   color: var(--about-text-color);
+   color: var(--team-text-color);
 }
 
 .team-card-link-content {
@@ -291,7 +298,7 @@ header {
 
 .team-card-link {
    font-size: 1.5rem;
-   background-color: var(--about-text-color);
+   background-color: var(--team-text-color);
    display: inline-flex;
    padding: 0.75rem;
    border-radius: 50%;
