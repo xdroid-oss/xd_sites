@@ -266,7 +266,7 @@ header {
 }
 
 .team-card {
-   background-color: #FBF6F0;
+   outline: 2px solid var(--team-text-color);
    display: flex;
    padding: 2rem;
    gap: 1rem;
@@ -291,6 +291,7 @@ header {
    position: absolute;
    top: 50%;
    left: 50%;
+   
    transform: translate(-50%, -145%);
    width: 150px;
 }
@@ -319,7 +320,7 @@ header {
    display: inline-flex;
    padding: 0.75rem;
    border-radius: 50%;
-   color: var(--white-text-color);
+   color: var(--team-color);
 }
 
 @media screen and (min-width: 390px) {
