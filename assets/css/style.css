@@ -16,7 +16,7 @@
 }
 
 :root {
-   --header-height: 3rem;
+   --header-height: 4rem;
 }
 
 :root {
@@ -72,7 +72,7 @@ img {
    display: grid;
    max-width: 1280px;
    grid-template-columns: 100%;
-   padding: 0 1rem;
+   padding: 0 1.7rem;
 }
 
 .section {
@@ -117,8 +117,8 @@ header {
       position: fixed;
       top: var(--header-height);
       left: 0;
-      padding: 2rem 1rem;
-      border-radius: 0 0 1rem 1rem;
+      padding: 1.7rem 1.7rem;
+      border-radius: 0 0 28px 28px;
       box-shadow: 5px 5px 3px rgb(0, 0, 0, 0.15);
       opacity: 0;
       visibility: hidden;
@@ -171,6 +171,7 @@ header {
 }
 
 .intro-text {
+   font-size: small;
    color: var(--white-text-color);
 }
 
@@ -224,6 +225,7 @@ header {
 
 .about-text {
    color: var(--about-text-color);
+   font-size: small;
 }
 
 .about-2 {
