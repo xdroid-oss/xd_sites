@@ -22,6 +22,7 @@
 :root {
    --body-color: #ec9a98;
    --about-color: #fff2ee;
+   --team-color: #f5e6ce;
    --white-text-color: #ffffff;
    --about-text-color: #644747;
 }
@@ -197,21 +198,12 @@ header {
 
 /* =============== About =============== */
 .about {
-   position: relative;
    padding-top: 4rem;
    overflow: hidden;
    background-image: url(../img/about-bg.png);
-   background-size: 760px;
+   background-size: 980px;
    background-repeat: no-repeat;
-   background-position-x: -5px;
-}
-
-.about-top-bg {
-   position: absolute;
-   width: 720px;
-   top: 0;
-   left: -10px;
-   z-index: var(--z-back);
+   background-position-x: -220px;
 }
 
 .about-title {
@@ -237,16 +229,71 @@ header {
 .about-img {
    width: 425px;
    margin-left: -72px;
+   z-index: var(--z-back);
 }
 
 .team {
+   background-color: var(--team-color);
+}
+
+.team-1 {
+   margin-bottom: 8rem;
+}
+
+.team-card {
+   display: flex;
+   padding: 2rem;
+   gap: 1rem;
+   box-shadow: 0 0 5px 3px rgb(0, 0, 0, 0.15);
+   border-radius: 3rem;
+}
+
+.team-card-content {
+   display: flex;
+   flex-direction: column;
+   gap: 7.5rem;
+   position: relative;
+   padding: 0.5rem;
+}
+
+.team-card {
+   display: flex;
+   flex-direction: column;
    position: relative;
 }
 
-.team-top-bg {
+.team-card-img {
    position: absolute;
-   bottom: 0;
-   left: 0;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -145%);
+   width: 150px;
+}
+
+.team-card-info {
+   padding-top: 4.5rem;
+   text-align: center;
+}
+
+.team-card-name {
+   color: var(--about-text-color);
+}
+
+.team-card-link-content {
+   margin-top: 1.25rem;
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   align-items: center;
+}
+
+.team-card-link {
+   font-size: 1.5rem;
+   background-color: var(--about-text-color);
+   display: inline-flex;
+   padding: 0.75rem;
+   border-radius: 50%;
+   color: var(--white-text-color);
 }
 
 @media screen and (min-width: 390px) {
