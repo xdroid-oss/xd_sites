@@ -4,7 +4,7 @@ const main = document.querySelector("main");
 const header = document.querySelector("header");
 
 jQuery(document).ready(function(){
-   $(".preloader").fadeOut();
+   $(".preloader").delay(1000).fadeOut();
 })
 
 const showMenu = (toggleId, navId, mainId) => {
