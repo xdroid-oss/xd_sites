@@ -34,6 +34,23 @@
    --z-back: -100;
 }
 
+/* =============== Loader =============== */
+.preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+   background-color: var(--body-color);
+ }
+ .preloader .loading-bar {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+ }
+
 /* =============== Reset HTML =============== */
 *,
 *::before,

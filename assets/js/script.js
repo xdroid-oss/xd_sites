@@ -3,6 +3,10 @@ const toggle = document.getElementById("nav-toggle");
 const main = document.querySelector("main");
 const header = document.querySelector("header");
 
+$(document).ready(function(){
+   $(".preloader").fadeOut();
+})
+
 const showMenu = (toggleId, navId, mainId) => {
    if (toggle && navMenu) {
       toggle.addEventListener("click", () => {
