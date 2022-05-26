@@ -305,7 +305,12 @@ header {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -145%);
+   mask-image: url(/assets/img/team-profile-mask.png);
+   mask-repeat: no-repeat;
    width: 150px;
+   height: 150px;
+   -webkit-mask-image: url(/assets/img/team-profile-mask.png);
+   -webkit-mask-repeat: no-repeat;
 }
 
 .team-card-info {
