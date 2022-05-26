@@ -4,7 +4,7 @@ const main = document.querySelector("main");
 const header = document.querySelector("header");
 
 jQuery(document).ready(function () {
-   $(".preloader").delay(1000).fadeOut();
+   $(".preloader").delay(5000).fadeOut();
 });
 
 if (toggle && navMenu) {
