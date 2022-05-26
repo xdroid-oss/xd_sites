@@ -3,7 +3,7 @@ const navMenu = document.getElementById("nav-menu");
 const content = document.querySelectorAll("section");
 
 jQuery(document).ready(function () {
-   $(".preloader").delay(1000).fadeOut();
+   $(".preloader").delay(5000).fadeOut();
 });
 
 const showMenu = () => {
