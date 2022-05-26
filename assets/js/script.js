@@ -7,32 +7,31 @@ jQuery(document).ready(function(){
    $(".preloader").delay(1000).fadeOut();
 })
 
-const showMenu = (toggleId, navId, mainId) => {
-   if (toggle && navMenu) {
-      toggle.addEventListener("click", () => {
-         navMenu.classList.toggle("show-menu");
-         main.classList.toggle("main-blur");
-      });
-   }
+if (toggle && navMenu) {
+   toggle.addEventListener("click", () => {
+      navMenu.classList.toggle("show-menu");
+      main.classList.toggle("main-blur");
+   });
+}
 
-   if (main) {
-      main.addEventListener("click", () => {
-         navMenu.classList.remove("show-menu");
-      });
-   }
-};
-
-showMenu("nav-toggle", "nav-menu");
+if (main) {
+   main.addEventListener("click", () => {
+      navMenu.classList.remove("show-menu");
+      main.classList.remove("main-blur");
+   });
+}
 
 const navLink = document.querySelectorAll(".nav-link");
 navLink.forEach((link) =>
    link.addEventListener("click", () => {
-      navMenu.classList.toggle("show-menu");
+      navMenu.classList.remove("show-menu");
+      main.classList.remove("main-blur");
    })
 );
 
 window.onscroll = () => {
    if (window.scrollY > 1) {
       navMenu.classList.remove("show-menu");
+      main.classList.remove("main-blur");
    }
 };
