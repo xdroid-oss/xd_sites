@@ -4,11 +4,19 @@
 /* =============== Variable =============== */
 :root {
    --body-font: "Poppins", sans-serif;
-   --normal-font-size: 0.95rem;
+   --normal-font-size: 0.85rem;
 }
 
 :root {
-   --header-height: 4rem;
+   --header-height: 5rem;
+   --normal-font-size: 1.15rem;
+}
+
+@media screen and (max-width: 540px) {
+   :root {
+      --header-height: 4rem;
+      --normal-font-size: 0.85rem;
+   }
 }
 
 :root {
@@ -35,13 +43,13 @@
    height: 100%;
    z-index: 9999;
    background-color: var(--body-color);
- }
- .preloader .loading-bar {
+}
+.preloader .loading-bar {
    position: absolute;
    left: 50%;
    top: 50%;
-   transform: translate(-50%,-50%);
- }
+   transform: translate(-50%, -50%);
+}
 
 /* =============== Reset HTML =============== */
 *,
@@ -58,7 +66,6 @@ html {
 
 body {
    font-family: var(--body-font);
-   font-size: var(--normal-font-size);
    font-weight: 500;
    background-color: var(--body-color);
 }
@@ -81,7 +88,7 @@ img {
 /* =============== Layout =============== */
 .grid {
    display: grid;
-   max-width: 1280px;
+   max-width: 1200px;
    grid-template-columns: 100%;
    padding: 0 1.7rem;
 }
@@ -116,7 +123,7 @@ header {
    color: var(--white-text-color);
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 767px) {
    .nav-menu {
       background-color: var(--body-color);
       width: 90%;
@@ -197,23 +204,28 @@ header {
    padding-top: var(--header-height);
 }
 
-.intro-text {
-   font-size: small;
-   color: var(--white-text-color);
-}
-
 .intro-title {
    width: 90%;
-   font-size: 2rem;
+   font-size: 1.85rem;
    margin-bottom: 1rem;
+}
+
+.intro-text {
+   color: var(--white-text-color);
+   font-size: var(--normal-font-size);
 }
 
 .intro-top {
    margin-bottom: 2.5rem;
 }
 
+.intro-bottom {
+   max-width: max-content;
+}
+
 .intro-btn {
    background-color: var(--white-text-color);
+   font-size: var(--normal-font-size);
    color: var(--body-color);
    padding: 0.75rem 2rem;
    border-radius: 3rem;
@@ -234,7 +246,7 @@ header {
 
 .about-text {
    color: var(--about-text-color);
-   font-size: small;
+   font-size: var(--normal-font-size);
 }
 
 .about-bg {
@@ -254,7 +266,7 @@ header {
 
 .about-img {
    width: 420px;
-   transform: translateX(-75px);
+   transform: translateX(-80px);
 }
 
 /* =============== Team =============== */
@@ -293,7 +305,7 @@ header {
 .team-card {
    position: relative;
    display: flex;
-   background-color: #FBF6F0;
+   background-color: #fbf6f0;
    flex-direction: column;
    gap: 1rem;
    border-radius: 3rem;
@@ -321,6 +333,12 @@ header {
 
 .team-card-name {
    color: var(--team-text-color);
+   font-size: 1.25rem;
+}
+
+.team-card-position:nth-child(2) {
+   margin-top: 0.5rem;
+   font-size: var(--normal-font-size);
 }
 
 .team-card-link-content {
@@ -340,20 +358,37 @@ header {
    color: var(--white-text-color);
 }
 
-@media screen and (max-width: 360px) {
-   .section-title {
-      font-size: 1.5rem;
+.scroll-content {
+   position: fixed;
+   background-color: var(--body-color);
+   bottom: 30px;
+   right: 30px;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   padding: 0.5rem;
+   border-radius: 0.75rem;
+}
+
+.scroll-link {
+   font-size: 2rem;
+   display: inline-flex;
+   color: var(--white-text-color);
+}
+
+@media screen and (min-width: 390px) {
+   .intro-title {
+      width: 90%;
    }
 
-   .intro-title {
-      font-size: 1.75rem;
-      width: 100%;
+   .about-img {
+      transform: translateX(-70px);
    }
 }
 
 @media screen and (min-width: 412px) {
    .intro-title {
-      width: 85%;
+      width: 80%;
    }
 
    .intro-text {
@@ -366,7 +401,7 @@ header {
    }
 
    .about-img {
-      transform: translateX(-35px);
+      transform: translateX(-45px);
    }
 
    .team-card-content {
@@ -382,5 +417,173 @@ header {
 
    .about-img {
       transform: translateX(-30px);
+   }
+
+   .about-title {
+      width: 90%;
+   }
+}
+
+@media screen and (min-width: 540px) {
+   .intro-title {
+      font-size: 2rem;
+      width: 65%;
+   }
+
+   .intro-text {
+      width: 65%;
+   }
+
+   .intro-img {
+      transform: translateX(20px);
+   }
+
+   .about-bg {
+      width: 250%;
+      left: -300px;
+   }
+
+   .team-header-bg {
+      width: 200%;
+      bottom: -930px;
+      left: -280px;
+   }
+
+   .about-img {
+      width: 440px;
+      transform: translateX(30px);
+   }
+}
+
+@media screen and (min-width: 568px) {
+   .intro-title {
+      width: 70%;
+   }
+}
+
+@media screen and (min-width: 767px) {
+   .nav-toggle {
+      display: none;
+   }
+
+   .nav-list {
+      flex-direction: row;
+      justify-content: flex-end;
+   }
+
+   .nav-link-icon {
+      display: none;
+   }
+
+   .grid {
+      padding: 0 2rem;
+   }
+
+   .section-title {
+      font-size: 2.25rem;
+   }
+
+   .nav-menu {
+      width: 60%;
+   }
+
+   .nav-logo,
+   .nav-toggle {
+      font-size: 2rem;
+   }
+
+   .intro-content {
+      padding-top: var(--header-height);
+      position: relative;
+   }
+
+   .intro-title {
+      width: 50%;
+   }
+
+   .intro-text {
+      width: 60%;
+   }
+
+   .intro-img {
+      position: absolute;
+      width: 480px;
+      top: -50%;
+      right: -50%;
+      transform: translate(-70%, 12.5%);
+      z-index: var(--z-back);
+   }
+
+   .about {
+      padding-bottom: calc(3 * var(--header-height));
+      position: relative;
+   }
+
+   .about-content {
+      grid-template-columns: 75% 25%;
+      background-color: transparent;
+   }
+
+   .about-bg {
+      width: 180%;
+      top: 50px;
+      left: -500px;
+   }
+
+   .about-text {
+      width: 70.5%;
+      text-align: justify;
+   }
+
+   .about-img {
+      position: absolute;
+      width: 510px;
+      top: 120px;
+      right: -45px;
+   }
+
+   .team-header-bg {
+      width: 160%;
+      bottom: -1050px;
+      left: -190px;
+   }
+
+   .scroll-link {
+      font-size: 2.5rem;
+   }
+}
+
+@media screen and (min-width: 800px) {
+   .section-title {
+      font-size: 2.5rem;
+   }
+
+   .intro-title {
+      width: 55%;
+   }
+
+   .about-title {
+      width: 90%;
+   }
+
+   .about-img {
+      top: 140px;
+      right: -45px;
+   }
+
+   .team-header-bg {
+      bottom: -1105px;
+   }
+}
+
+@media screen and (min-width: 820px) {
+   .team-header-bg {
+      bottom: -1135px;
+   }
+}
+
+@media screen and (min-width: 834px) {
+   .team-header-bg {
+      bottom: -1150px;
    }
 }

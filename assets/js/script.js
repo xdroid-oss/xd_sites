@@ -3,9 +3,9 @@ const toggle = document.getElementById("nav-toggle");
 const main = document.querySelector("main");
 const header = document.querySelector("header");
 
-jQuery(document).ready(function(){
+jQuery(document).ready(function () {
    $(".preloader").delay(1000).fadeOut();
-})
+});
 
 if (toggle && navMenu) {
    toggle.addEventListener("click", () => {
@@ -29,9 +29,18 @@ navLink.forEach((link) =>
    })
 );
 
+const scrollUp = document.getElementById("scroll-up");
 window.onscroll = () => {
    if (window.scrollY > 1) {
       navMenu.classList.remove("show-menu");
       main.classList.remove("main-blur");
    }
 };
+
+window.addEventListener("scroll", () => {
+   if (window.scrollY > 100) {
+      scrollUp.style.display = "flex";
+   } else {
+      scrollUp.style.display = "none";
+   }
+});
