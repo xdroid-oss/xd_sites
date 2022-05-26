@@ -149,6 +149,7 @@ header {
 }
 
 .nav-link-icon {
+   padding-left: 1rem;
    font-size: 1.5rem;
    color: var(--white-text-color);
    display: inline-flex;
