@@ -377,7 +377,7 @@ header {
 .footer-bg {
    position: absolute;
    width: 1720px;
-   bottom: -270%;
+   bottom: -265%;
    left: -150%;
 }
 
@@ -420,7 +420,7 @@ header {
    font-weight: 900;
    font-size: 3.5rem;
    font-style: italic;
-   color: var(--team-color);
+   color: var(--about-color);
    margin-bottom: 0.25rem;
 }
 
@@ -623,7 +623,7 @@ header {
 
    .footer-bg {
       bottom: -380%;
-      left: -67.5%;
+      left: -58.5%;
    }
 
    .footer-container {
@@ -641,12 +641,12 @@ header {
    .primary-title,
    .discovery-title {
       margin-bottom: 1rem;
-      color: var(--team-color);
+      color: var(--about-color);
    }
 
    .primary-link,
    .discovery-link {
-      color: var(--team-color);
+      color: var(--about-color);
    }
 
    .footer-text-content:nth-child(3) {
