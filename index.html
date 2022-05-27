@@ -40,149 +40,178 @@
 
    </head>
    <body>
-      <div class="preloader">
-         <div class="loading-bar">
-            <lottie-player src="/assets/img/preloading-logo.json" loop autoplay />
+      <div class="wrapper-container" id="wrapper-container">
+         <div class="preloader">
+            <div class="loading-bar">
+               <lottie-player src="/assets/img/preloading-logo.json" loop autoplay />
+            </div>
          </div>
-      </div>
       <!-- /* =============== Header =============== */ -->
-      <header id="header">
-         <!-- /* =============== NavBar =============== */ -->
-         <nav class="nav grid">
-            <div>
-               <a href="#" class="nav-logo">xd</a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-               <ul class="nav-list">
-                  <li class="nav-item">
-                     <div class="nav-link-icon">
-                        <i class="bx bxs-news"></i>
-                     </div>
-                     <a href="/news_site/news.html" class="nav-link"> News </a>
-                  </li>
-                  <li class="nav-item">
-                     <div class="nav-link-icon">
-                        <i class="bx bx-download"></i>
-                     </div>
-                     <a href="/release_site/release.html" class="nav-link"> Download </a>
-                  </li>
-                  <li class="nav-item">
-                     <div class="nav-link-icon">
-                        <i class="bx bx-code"></i>
-                     </div>
-                     <a href="https://github.com/xdroid-OSS" class="nav-link"> Sources</a>
-                  </li>
-                  <li class="nav-item">
-                     <div class="nav-link-icon">
-                        <i class="bx bx-images"></i>
-                     </div>
-                     <a href="/preview_site/preview.html" class="nav-link"> Screenshots </a>
-                  </li>
-               </ul>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-               <i class="bx bx-menu"></i>
-            </div>
-         </nav>
-      </header>
-      <!-- /* =============== Main =============== */ -->
-      <main>
-         <section id="#intro" class="intro">
-            <div class="intro-content grid">
-               <div class="intro-left-content">
-                  <div class="intro-top">
+         <header id="header">
+            <!-- /* =============== NavBar =============== */ -->
+            <nav class="nav grid">
+               <div>
+                  <a href="#" class="nav-logo">xd</a>
+               </div>
+               <div class="nav-menu" id="nav-menu">
+                  <ul class="nav-list">
+                     <li class="nav-item">
+                        <div class="nav-link-icon">
+                           <i class="bx bxs-news"></i>
+                        </div>
+                        <a href="/news_site/news.html" class="nav-link"> News </a>
+                     </li>
+                     <li class="nav-item">
+                        <div class="nav-link-icon">
+                           <i class="bx bx-download"></i>
+                        </div>
+                        <a href="/release_site/release.html" class="nav-link"> Download </a>
+                     </li>
+                     <li class="nav-item">
+                        <div class="nav-link-icon">
+                           <i class="bx bx-code"></i>
+                        </div>
+                        <a href="https://github.com/xdroid-OSS" class="nav-link"> Sources</a>
+                     </li>
+                     <li class="nav-item">
+                        <div class="nav-link-icon">
+                           <i class="bx bx-images"></i>
+                        </div>
+                        <a href="/preview_site/preview.html" class="nav-link"> Screenshots </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="nav-toggle" id="nav-toggle">
+                  <i class="bx bx-menu"></i>
+               </div>
+            </nav>
+            <!-- /* =============== Intro =============== */ -->
+            <div class="intro-bg"><img src="assets/img/intro.svg" alt="" /></div>
+            <section class="intro section">
+               <div class="intro-container grid">
+                  <div class="intro-top-content">
                      <h1 class="intro-title section-title">Where Designs Meet Functionality</h1>
                      <p class="intro-text">An Android OS with Minimal Design Oriented With all the useful stuff that you love!</p>
                   </div>
-                  <div class="intro-bottom">
+                  <div class="intro-bottom-content">
                      <a href="/release_site/release.html" class="intro-btn">Get it Now!</a>
                   </div>
                </div>
-               <div class="intro-right-content">
-                  <img src="assets/img/intro.svg" alt="" class="intro-img" />
+            </section>
+         </header>
+         <!-- /* =============== About =============== */ -->
+         <main class="main" id="main">
+            <section class="about section">
+               <div class="about-bg"><img src="assets/img/about-bg.png" alt="" /></div>
+               <div class="about-container grid">
+                  <div class="about-content">
+                     <h1 class="about-title section-title">Brand new Experience yet Lightweight</h1>
+                     <p class="about-text">
+                        Built based from AOSP, We’ve trying to provide the best experience on your devices with our Minimal UI, crafted with our hearts. And all things are on-point. <br />
+                        <br />
+                        No Fuss, No Muss, Easy.
+                     </p>
+                  </div>
+                  <div class="about-content">
+                     <img src="assets/img/about.png" alt="" class="about-img" />
+                  </div>
                </div>
-            </div>
-         </section>
+            </section>
 
-         <section id="#about" class="about">
-            <img src="assets/img/about-bg.png" alt="" class="about-bg" />
-            <div class="about-content section grid">
-               <div class="about-left-content">
-                  <h1 class="about-title section-title">Brand new Experience yet Lightweight</h1>
-                  <p class="about-text">
-                     Built based from AOSP, We’ve trying to provide the best experience on your devices with our Minimal UI, crafted with our hearts. And all things are on-point. <br />
-                     <br />
-                     No Fuss, No Muss, Easy.
-                  </p>
-               </div>
-               <div class="about-right-content">
-                  <img src="assets/img/about.png" alt="" class="about-img" />
-               </div>
-            </div>
-            <img src="assets/img/team-bg.png" alt="" class="team-header-bg" />
-         </section>
-
-         <section id="#team" class="team">
-            <div class="team-content grid">
-               <div class="team-top">
-                  <h1 class="team-title section-title">Our Team</h1>
-               </div>
-               <div class="team-bottom">
-                  <div class="team-card-content">
-                     <div class="team-card">
-                        <img src="https://avatars.githubusercontent.com/u/57469823?v=4" alt="" class="team-card-img" />
-                        <div class="team-card-info">
-                           <h2 class="team-card-name">Jody Yuantoro</h2>
-                           <p class="team-card-position">Founder</p>
-                           <p class="team-card-position">Lead Developer & UI Designer</p>
-                           <div class="team-card-link-content">
-                              <a href="https://t.me/xyzuan" class="team-card-link"><i class="bx bxl-telegram team-card-link-icon"></i></a>
-                              <a href="https://github.com/xyzuan" class="team-card-link"><i class="bx bxl-github team-card-link-icon"></i></a>
-                              <a href="https://instagram.com/jodyyuan" class="team-card-link"><i class="bx bxl-instagram-alt team-card-link-icon"></i></a>
+            <!-- /* =============== Team =============== */ -->
+            <section class="team section">
+               <div class="team-bg"><img src="assets/img/team-bg.png" alt="" /></div>
+               <div class="team-container grid">
+                  <div class="team-content">
+                     <h1 class="team-title section-title">Our Team</h1>
+                  </div>
+                  <div class="team-content">
+                     <div class="team-card-content">
+                        <div class="team-card">
+                           <img src="https://avatars.githubusercontent.com/u/57469823?v=4" alt="" class="team-card-img" />
+                           <div class="team-card-info">
+                              <h2 class="team-card-name">Jody Yuantoro</h2>
+                              <p class="team-card-position">Founder</p>
+                              <p class="team-card-position">Lead Developer & UI Designer</p>
+                              <div class="team-card-link-content">
+                                 <a href="https://t.me/xyzuan" class="team-card-link"><i class="bx bxl-telegram team-card-link-icon"></i></a>
+                                 <a href="https://github.com/xyzuan" class="team-card-link"><i class="bx bxl-github team-card-link-icon"></i></a>
+                                 <a href="https://instagram.com/jodyyuan" class="team-card-link"><i class="bx bxl-instagram-alt team-card-link-icon"></i></a>
+                              </div>
                            </div>
                         </div>
-                     </div>
 
-                     <div class="team-card">
-                        <img src="https://avatars.githubusercontent.com/u/34088764?v=4" alt="" class="team-card-img" />
-                        <div class="team-card-info">
-                           <h2 class="team-card-name">Firman Yanuar</h2>
-                           <p class="team-card-position">UI & UX</p>
-                           <p class="team-card-position">Designer</p>
-                           <div class="team-card-link-content">
-                              <a href="https://t.me/gerobaksariroti" class="team-card-link"><i class="bx bxl-telegram team-card-link-icon"></i></a>
-                              <a href="https://github.com/Fr1ction" class="team-card-link"><i class="bx bxl-github team-card-link-icon"></i></a>
-                              <a href="https://instagram.com/gerobaksariroti" class="team-card-link"><i class="bx bxl-instagram-alt team-card-link-icon"></i></a>
+                        <div class="team-card">
+                           <img src="https://avatars.githubusercontent.com/u/34088764?v=4" alt="" class="team-card-img" />
+                           <div class="team-card-info">
+                              <h2 class="team-card-name">Firman Yanuar</h2>
+                              <p class="team-card-position">UI & UX</p>
+                              <p class="team-card-position">Designer</p>
+                              <div class="team-card-link-content">
+                                 <a href="https://t.me/gerobaksariroti" class="team-card-link"><i class="bx bxl-telegram team-card-link-icon"></i></a>
+                                 <a href="https://github.com/Fr1ction" class="team-card-link"><i class="bx bxl-github team-card-link-icon"></i></a>
+                                 <a href="https://instagram.com/gerobaksariroti" class="team-card-link"><i class="bx bxl-instagram-alt team-card-link-icon"></i></a>
+                              </div>
                            </div>
                         </div>
-                     </div>
 
-                     <div class="team-card">
-                        <img src="https://avatars.githubusercontent.com/u/99869733?v=4" alt="" class="team-card-img" />
-                        <div class="team-card-info">
-                           <h2 class="team-card-name">Eky Zakariah</h2>
-                           <p class="team-card-position">Frontend</p>
-                           <p class="team-card-position">Web Developer</p>
-                           <div class="team-card-link-content">
-                              <a href="https://t.me/hahahahahhhhh10" class="team-card-link"><i class="bx bxl-telegram team-card-link-icon"></i></a>
-                              <a href="https://github.com/ekyzahahah" class="team-card-link"><i class="bx bxl-github team-card-link-icon"></i></a>
-                              <a href="https://instagram.com/ekyzahahah" class="team-card-link"><i class="bx bxl-instagram-alt team-card-link-icon"></i></a>
+                        <div class="team-card">
+                           <img src="https://avatars.githubusercontent.com/u/99869733?v=4" alt="" class="team-card-img" />
+                           <div class="team-card-info">
+                              <h2 class="team-card-name">Eky Zakariah</h2>
+                              <p class="team-card-position">Frontend</p>
+                              <p class="team-card-position">Web Developer</p>
+                              <div class="team-card-link-content">
+                                 <a href="https://t.me/hahahahahhhhh10" class="team-card-link"><i class="bx bxl-telegram team-card-link-icon"></i></a>
+                                 <a href="https://github.com/ekyzahahah" class="team-card-link"><i class="bx bxl-github team-card-link-icon"></i></a>
+                                 <a href="https://instagram.com/ekyzahahah" class="team-card-link"><i class="bx bxl-instagram-alt team-card-link-icon"></i></a>
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
-         </section>
-      </main>
-      <!-- /* =============== Footer =============== */ -->
-      <footer>
-         <div class="footer-content grid"></div>
-      </footer>
+            </section>
+         </main>
+         <!-- /* =============== Footer =============== */ -->
+         <footer class="footer section">
+            <div class="footer-bg"><img src="assets/img/footer-bg.png" alt="" /></div>
+            <div class="footer-container">
+               <div class="footer-content">
+                  <div class="primary">
+                     <h2 class="primary-title">Primary</h2>
+                     <div class="primary-link-list">
+                        <a href="" class="primary-link">News</a>
+                        <a href="" class="primary-link">Download</a>
+                        <a href="" class="primary-link">Sources</a>
+                     </div>
+                  </div>
+                  <div class="discovery">
+                     <h2 class="discovery-title">Discovery</h2>
+                     <div class="discovery-link-list">
+                        <a href="" class="discovery-link">Discussion</a>
+                        <a href="" class="discovery-link">Maintainership</a>
+                     </div>
+                  </div>
+               </div>
 
-      <div class="scroll-content" id="scroll-up">
-         <a href="#header" class="scroll-link"><i class="bx bxs-chevron-up"></i></a>
+               <div class="footer-content">
+                  <p class="footer-logo">xd</p>
+                  <div class="footer-text-content">
+                     <p class="footer-text">xdroid is a part of xyzprjkt</p>
+                  </div>
+                  <div class="footer-text-content">
+                     <p class="footer-text">© 2022 xyzscape LLC & Friction Design</p>
+                  </div>
+               </div>
+            </div>
+         </footer>
+
+         <div class="scroll-content" id="scroll-up">
+            <a href="#header" class="scroll-link"><i class="bx bxs-chevron-up"></i></a>
+         </div>
       </div>
+
       <!-- /* =============== JavaScript =============== */ -->
       <script src="assets/js/script.js"></script>
    </body>
