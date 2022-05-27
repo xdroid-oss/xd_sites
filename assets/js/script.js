@@ -1,46 +1,39 @@
+const navToggle = document.getElementById("nav-toggle");
 const navMenu = document.getElementById("nav-menu");
-const toggle = document.getElementById("nav-toggle");
-const main = document.querySelector("main");
-const header = document.querySelector("header");
+const content = document.querySelectorAll("section");
 
 jQuery(document).ready(function () {
    $(".preloader").delay(1000).fadeOut();
 });
 
-if (toggle && navMenu) {
-   toggle.addEventListener("click", () => {
-      navMenu.classList.toggle("show-menu");
-      main.classList.toggle("main-blur");
-   });
-}
+const showMenu = () => {
+   navMenu.classList.toggle("show-menu");
+   content.forEach((section) => section.classList.toggle("main-blur"));
+};
 
-if (main) {
-   main.addEventListener("click", () => {
-      navMenu.classList.remove("show-menu");
-      main.classList.remove("main-blur");
-   });
-}
+navToggle.addEventListener("click", showMenu);
+
+const closeMenu = () => {
+   navMenu.classList.remove("show-menu");
+   content.forEach((section) => section.classList.remove("main-blur"));
+};
+
+content.forEach((section) => section.addEventListener("click", closeMenu));
 
 const navLink = document.querySelectorAll(".nav-link");
-navLink.forEach((link) =>
-   link.addEventListener("click", () => {
-      navMenu.classList.remove("show-menu");
-      main.classList.remove("main-blur");
-   })
-);
+navLink.forEach((link) => link.addEventListener("click", closeMenu));
 
-const scrollUp = document.getElementById("scroll-up");
+const scrollBtn = document.getElementById("scroll-up");
 window.onscroll = () => {
    if (window.scrollY > 1) {
-      navMenu.classList.remove("show-menu");
-      main.classList.remove("main-blur");
+      closeMenu();
    }
 };
 
 window.addEventListener("scroll", () => {
    if (window.scrollY > 100) {
-      scrollUp.style.display = "flex";
+      scrollBtn.style.display = "flex";
    } else {
-      scrollUp.style.display = "none";
+      scrollBtn.style.display = "none";
    }
 });
